@@ -1,0 +1,281 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    background-color: white;
+    color: black;   
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }
+
+  .logo > img {
+    width: 350px;
+    height: 50px;
+    object-fit: cover;
+    object-position: 35% -60px;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+  }
+
+  @media (max-width: 650px) {
+    .logo > img {
+      margin: 0 auto;
+    }
+  }
+  nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  
+  @media (max-width: 650px) {
+    nav > ul {
+      flex-direction: column;
+      list-style-type: none;
+    }
+  }
+  nav {
+    font-weight: 400;
+    background-color: white;
+    padding-right: 60px;
+  }
+  
+  @media (max-width: 650px) {
+    nav {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 50px;
+    }
+    nav li {
+      padding-bottom: 5px;
+    }
+  }
+  
+  nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  @media (max-width: 650px) {
+    nav > ul {
+      flex-direction: column;
+    }
+  }
+  #header-lower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 30px;
+  }
+  
+  form > input {
+    
+    align-items: center;  
+    justify-self: center;
+    align-self: center;
+}
+#email {
+  margin-top: 0px;
+  width: 205px;
+  height: 20px;
+}
+#submit {
+  background-color: rgb(68, 206, 206);
+  border: 0px;
+  margin-top: 5px;
+  padding: 5px 15px 5px 15px;
+  font-size: medium;
+  font-weight: 600;
+}    
+#product-body {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 120px 120px 120px;
+    grid-template-areas: 
+    "image1 text-product-1"
+    "image2 text-product-2"
+    "image3 text-product-3";
+}
+#image1 {
+    border-radius: 50%;
+    grid-area: image1;
+    width: 140px;
+    height: 100px;
+    justify-self: center;
+    align-self: center;
+}
+
+#image2 {
+    border-radius: 50%;
+    grid-area: image2;
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+    align-self: center;
+}
+
+#image3 {
+    border-radius: 50%;
+    grid-area: image3;
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+    align-self: center;
+}
+
+#text-product-1 {
+    grid-area: text-product-1;
+    padding-right: 15%;
+}
+#text-product-2 {
+    grid-area: text-product-2;
+    padding-right: 15%;    
+}
+#text-product-3 {
+    grid-area: text-product-3;
+    padding-right: 15%;    
+}
+#learn-more {
+    justify-self: center;
+    align-self: center;
+}
+#video {
+    justify-self: center;
+    align-self: center;
+    padding-top: 75px;
+    padding-bottom: 125px;
+    width: 784px;
+    height: 441px;
+}
+#learn-more {
+    margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#price-options {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+#euros {
+    max-width: 50%; 
+}
+
+#bitcoin {
+    max-width: 50%;
+}
+#image-euro {
+    max-width: 100%;
+    max-height: 100%;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+#image-bitcoin {
+    max-width: 97%;
+    max-height: 90%;
+}
+#price-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 145px;
+  
+}
+#info-euros  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+#info-euros > p {
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+#info-bitcoin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    padding-bottom: -80px;
+}
+ #info-bitcoin > p {
+   margin-top: 20px;
+   margin-bottom: 35px;
+
+ }
+ #info-bictoin > h4 {
+   margin-top: -15px;
+ }
+
+footer {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+footer > ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  list-style-type: none;
+}
+span {
+  width: 100%;
+  display: block;
+}
+li {
+  padding: 0 5px 0 5px;
+}
+/** align items **/
+
+/* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; */
+                     
