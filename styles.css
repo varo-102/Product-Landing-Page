@@ -216,7 +216,7 @@ header {
 }
 #image-bitcoin {
     max-width: 97%;
-    max-height: 90%;
+    max-height: 100%;
 }
 #price-info {
   display: grid;
